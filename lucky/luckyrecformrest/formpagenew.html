@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <title>SaltyDogReceipts</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+            <style>
+                    #receipt {
+                        display: block;
+                        margin-inline-start: 2px;
+                        margin-inline-end: 2px;
+                        padding-block-start: 0.35em;
+                        padding-inline-start: 0.75em;
+                        padding-inline-end: 0.75em;
+                        padding-block-end: 0.625em;
+                        min-inline-size: min-content;
+                        border-width: 2px;
+                        border-style: groove;
+                        border-color: red;
+                        border-image: initial;
+                    }
+                    h1{
+                        font-size: 1.5em;
+                    }
+
+                    h2{
+                        font-size: 1em;
+                    }
+
+                    h3{
+                        font-size: .9em;
+                    }
+
+                    h4{
+                        font-size: .8em;
+                    }
+
+.container{
+
+    max-width: 900px;
+    display: block;
+}
+.row{
+
+    width: 100%;
+}
+                </style>
+
+                
+               
+        <div class="container">
+            <div id="my-container">
+                <div class="row justify-content-center" style="text-align: center">
+                        <div class="col">
+                                <h2 style="color:black">Congratulations!</h1>
+                                <h2 style="color:black">You have matched your receipt to a lucky winning one.</h2>
+                    
+                                
+                                
+                             
+                                </div>
+                    </div>
+                   
+                <div class="row">
+              <div class="col-md-9">
+                     <div id="message1">
+                <h2>Restaurant Receipt information:</h2>
+            </div> 
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                  <div id="message2">
+                <h4>Please fill out the following information found on your receipt:</h4>
+                <!-- <p style="color: red">Note that your receipt must match one of the receipts posted at</p>
+                        <a href=" https://saltydog.com/lucky/stores.html ">
+                            <p style="color:blue">https://saltydog.com/lucky</p> -->
+                <!--</a>-->
+                </div>
+            </div>
+            </div>
+          
+           </div>
+            <div class="col-md-3" style="float: right;">
+                <a href="https://saltydog.com/lucky/">Back to Lucky Receipts </a>
+            </div>
+            <form enctype="multipart/form-data" method="POST" action="emailcopy.php">
+                        <div id="receipt">
+                        <div class="form-group">
+                            <label for="name"> Receipt Number:</label>
+                            <input type="text" class="form-control" id="ReceiptNumber" name="ReceiptNumber" required maxlength="50">
+                        </div>
+                       
+                        <div class="form-group">
+                            <label for="name"> Date:</label>
+                            <input type="text" class="form-control" id="date" name="date" required maxlength="50">
+                        </div>
+                       
+                        <div class="form-group">
+                            <label for="name">  Server:</label>
+                            <input type="text" class="form-control" id="Server" name="Server" required maxlength="50">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="location">Select the Restaurant you visited from this drop down list:</label>
+                            <select required id="location" name="location">
+                                    <option value=""></option>
+                                 
+                                    <option value="Salty Dog Cafe in South Beach">Salty Dog Cafe in South Beach</option>  
+                                    <option value="Salty Dog Cafe in Bluffton">Salty Dog Cafe in Bluffton</option>
+                                    <option value="The Wreck of the Salty Dog">The Wreck of the Salty Dog</option>
+                                    <option value="Land's End Tavern">Land's End Tavern</option>
+                                    <option value="Salty Dog Cafe Seabrook">Salty Dog Seabrook</option>
+                                  
+                                </select>
+                          
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Amount:</label>
+                            <input type="text" class="form-control" id="amount" name="amount" required maxlength="50">
+                        </div>
+
+                    </div>
+                  
+                    <br>
+                           <div class="form-group">
+                               <label for="name">For verification, you must attach an image of your receipt here. A cell phone photo is fine.*</label>
+                               <input type="file" name="my_files[]" multiple/></label>
+                            
+                          
+                        </div>
+                        <br>
+                          <h2>Your Contact Information:</h2> 
+                        <div class="form-group">
+                            <label for="name"> Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"> Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                        </div>
+
+                    <div class="form-group">
+
+                        <label for="email2"> Please Confirm Your Email Address:</label>
+
+                        <input type="email2" class="form-control" id="email2" name="email2" required maxlength="50">
+
+                    </div>
+                     
+                        <div class="form-group">
+                            <label for="name"> Message:</label>
+                            <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="500" rows="4"></textarea>
+                       
+                       
+                         <label for="name">* If you are unable to attach a photo,
+                             winners can fax a copy of the receipt along with their contact info to: 843-671-6679</label>
+                          
+                            <label for="name"> Or mail it to: Lucky Receipt Contest
+                                c/o Salty Dog Inc. Office / 
+                                224 South Sea Pines Dr. /  
+                                Hilton Head Island SC 29928</label>
+                                
+                                </div>
+              
+                
+                        <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs">Send It &rarr;</button>
+                        <!-- <div class="g-recaptcha" data-sitekey="6Lckc5YUAAAAAAMHgfCXuvlbeO1FTsCAu4ihH8kx"></div> -->
+                   
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h1 style="font-size: 2em";> Your information was sent successfully!</h1> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="description" content="Want to work at Salty dog? Fill out the form and we will get back to you">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <title>BoDogJobs</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- framework css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/styleBoot.css">
+    <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/mega-header.css">
+
+    <link rel="stylesheet" href="../css/form.css"> 
+    <script src="form.js"></script>
+
+  
+
+   
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function () {
+            $("div[data-includeHTML]").each(function () {
+                $(this).load($(this).attr("data-includeHTML"));
+            });
+        });
+    </script>
+
+
+    <header>
+    <div data-includeHTML="https://bohicket.saltydog.com/headers/headerbo.html"></div>
+  </header>
+
+    <br>
+    <br>
+
+    <!-- <img src="https://saltydog.com/images/NEW HEADERS/EMPLOYMENT.jpg" style="width:100%; height:auto" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and events written on it."> -->
+    <br>
+    <br>
+    <div class="container">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <div class="form-container">
+
+            <form method="post" id="reused_form" class="form-style-10">
+                    <div id="title">   
+                <h5>
+                    Salty Dog Employment Form </h5>
+                    </div>
+                    <div id="title"> 
+                        <h6>
+                            Please note you must be 18 years or older to work for any Salty Dog Inc business.</h6>
+                            </div>
+                    
+              
+                    <label for='name'>Name: </label>
+                    <input id="name" type="text" name="Name" required maxlength="50">
+
+                    <label for='phone'> Phone Number: </label>
+                    <input id="phone" type="phone" name="Phone" required maxlength="50">
+
+
+                    <label for="age"> Are you 18 years old or older?</label>
+                    <select id="age" name="age" required style="display: block; margin-bottom: 5px;
+                    width: 100%; border-radius: 10px;
+                   height: calc(2.25rem + 2px);">
+                        <option disabled selected>Choose one</option>
+
+                        <option value="18 Years old - yes">Yes, I am 18 years old or older.</option>
+                        <option value="18 years old - no">No, I am not 18 years old or older.</option>
+
+
+                    </select>
+
+                    <label for='email'> Email Address:</label>
+                    <input id="email" type="email" name="Email" required maxlength="50">
+
+                    <label for='date'>Date Available to start work: </label>
+                    <input id="date" type="date" name="date" required maxlength="50">
+
+                    <label for='grade'>What Is The Highest Grade Or Level Of School You Have
+                        Completed Or The Highest Degree You Have Received?</label>
+                    <textarea id="grade" name="grade" rows="10" maxlength="6000" required></textarea>
+
+                    <label for='areas'>What areas of employment interest you the most?</label>
+                    <textarea id="areas" name="areas" rows="10" maxlength="6000" required></textarea>
+
+
+                  
+                        <label for="location"> Which location are you intested in?</label>
+                        <select id="location" name="location" style="display: block; margin-bottom: 5px;
+                        width: 100%; border-radius: 10px;
+                       height: calc(2.25rem + 2px);">
+                            <option disabled selected>Choose your location preference</option>
+
+                            <option value="Hilton Head">Hilton Head</option>
+                            <option value="Bluffton">Bluffton</option>
+                            <option value="Bohicket Marina">Bohicket Marina</option>
+
+
+                        </select>
+
+                  
+
+                    <label for='experience'>What areas of employment do you have experience in?</label>
+                    <textarea id="experience" name="experience" rows="10" maxlength="6000" required></textarea>
+
+                    <label for='skills'>Tell us about any skills or hobbies you have that you feel
+                        make you a good crew member:</label>
+                    <textarea id="skills" name="skills" rows="10" maxlength="6000" required></textarea>
+
+                    <label for='favorite'>What was your favorite job, volunteer work, class, or
+                        extracurricular activity and why?</label>
+                    <textarea id="favorite'" name="favorite'" rows="10" maxlength="6000" required></textarea>
+
+                    <label for='service'>Please define great customer service.</label>
+                    <textarea id="service" name="service" rows="10" maxlength="6000" required></textarea>
+
+                    <button class="button-primary" type="submit">Post</button>
+            </form>
+            <div id="success_message" style="display:none">
+                <h3>Submitted successfully!</h3>
+                <h3> We will get back to you soon. </h3>
+            </div>
+            <div id="error_message" style="width:100%; height:100%; display:none; ">
+                <h3>Error</h3> Sorry there was an error sending your form.
+            </div>
+        </div>
+    </div>
+    </div>
+      <footer>
+        <div data-includeHTML="https://saltydog.com/headers/footer.html"></div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+html { font-size: calc(1em + 1vw) }
+body{
+    font-family: 'Rubik', sans-serif;
+}
+     
+
+
+        
+        .carousel-inner img {
+            margin: auto;
+          }
+
+          .block-top {
+            
+            background: white;
+            padding: 1rem;
+           
+            margin: 0 0 1rem 0;
+            color: rgb(4, 4, 51);
+          }
+        .block {
+            overflow: hidden;
+            background: white;
+            padding: 1rem;
+            max-width: 40rem;
+            margin: 0 0 1rem 0;
+            color: rgb(4, 4, 51);
+          }
+          .block img {
+            width: 70%;
+            height: auto;
+            float: left;
+            margin: 0 1rem 0 0;
+          }
+          .block p {
+            font-weight: 500;
+            margin: 0 0 0.5rem 0;
+            color: rgb(4, 4, 51);
+          }
+          
+        .block-left {
+            overflow: hidden;
+            background: white;
+            padding: 1rem;
+            max-width: 40rem;
+            margin: 0 0 1rem 0;
+            color: rgb(4, 4, 51);
+          }
+          .block-left img {
+            width: 70%;
+            height: auto;
+            float: left;
+            margin: 0 1rem 0 0;
+          }
+          .block-left p {
+            font-weight: 500;
+            margin: 0 0 0.5rem 0;
+            color: rgb(4, 4, 51);
+            text-align: right;
+          }
+          
+
+          .block-right {
+            overflow: hidden;
+            background: white;
+            padding: 1rem;
+            max-width: 40rem;
+            margin: 0 0 0 1rem ;
+            color: rgb(4, 4, 51);
+          }
+          .block-right img {
+         
+            height: auto;
+            float: right;
+            margin: 0 1rem 0 0;
+          }
+          .block-right p {
+            font-weight: 500;
+            margin: 0 0 0.5rem 0;
+            color: rgb(4, 4, 51);
+          }
+           .block-right ul li {
+
+            text-align: left;
+          } 
+
+          .block-right ul li img{
+
+            float: left;
+          } 
+          .block-center  {
+            width: 40%;
+            height: auto;
+            float: right;
+            margin: 0 1rem 0 0;
+          }
+        
+     
+        
+          h1 {
+         
+            font-size: 1em;
+        }  h2 {
+         
+            font-size: .9em;
+        }  h3 {
+         
+            font-size: .9em;
+        }  h4 {
+         
+            font-size: .8em;
+        }  h5 {
+         
+            font-size: .7em;
+        }  h6 {
+         
+            font-size: .6em;
+        }
+        p {
+         
+            font-size: .4em;
+        }
+       
+
+        label{
+
+            font-size: .9em!important;
+          
+            
+        }
+    
+
+    
+        .col {
+            text-align: center;
+          
+            padding-top: 5px;
+
+        }
+
+        .container {
+            text-align: center;
+            /* margin-top: 5px; */
+            max-width: 1200px;
+        }
+
+        .row {
+            text-align: center;
+           
+
+        }
+
+        ul { 
+            
+            list-style-image: url(../../images/logo-buttons/yellow-paw.png); 
+        
+        }
+
+        li {
+            text-align: left;
+            color: rgb(4, 4, 51)!important;
+        }
+
+  
+
+    
+     h2 {
+         text-align: center;
+     }
+
+      
+        label{
+            text-align: left!important;
+        }
+
+     

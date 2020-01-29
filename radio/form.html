@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Retail Sales</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+textarea[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=file] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+#location{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+#shift{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="container justify-content-center ">
+            <div class="row justify-content-center" style="margin-top: 10px;">
+                <div class="col justify-content-center">
+                  <h1>Salty Dog Radio Add a Song</h1>        
+                </div>
+              </div>
+          
+              <div class="row justify-content-center" style="margin-top: 10px;">
+                <div class="col justify-content-center">
+                  <form action="send.php" method="post">
+                    <div class="form-group">
+                      <label for="song">Song Title</label>
+                      <input type="text" class="form-control" id="song" name="song" required maxlength="30">
+                    </div>
+                    <div class="form-group">
+                      <label for="song">Artist</label>
+                      <input type="text" class="form-control" id="artist" name="artist" required maxlength="25">
+                    </div>
+                   
+                       
+          <br>
+                    <input type="submit"  class="btn btn-primary" value="Request Song">
+                  </form>
+                  <div id="success_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Sent your message successfully!</h3>
+                </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3> Sorry there was an error sending your form.
+                </div>
+                </div>
+              </div>
+</body>
+
+</html>

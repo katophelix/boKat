@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <title>SaltyDogReceipts</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+            <style>
+                    #receipt {
+                        display: block;
+                        margin-inline-start: 2px;
+                        margin-inline-end: 2px;
+                        padding-block-start: 0.35em;
+                        padding-inline-start: 0.75em;
+                        padding-inline-end: 0.75em;
+                        padding-block-end: 0.625em;
+                        min-inline-size: min-content;
+                        border-width: 2px;
+                        border-style: groove;
+                        border-color: red;
+                        border-image: initial;
+                    }
+                    h1{
+                        font-size: 1.5em;
+                    }
+
+                    h2{
+                        font-size: 1em;
+                    }
+
+                    h3{
+                        font-size: .9em;
+                    }
+
+                    h4{
+                        font-size: .8em;
+                    }
+
+.container{
+
+    max-width: 900px;
+    display: block;
+}
+.row{
+
+    width: 100%;
+}
+                </style>
+
+                
+        <div class="container">
+                <div class="row justify-content-center" style="text-align: center">
+                        <div class="col">
+                            <h1 style="color:blue">Congratulations!!! </h1>
+                            <h2 style="color:blue">You matched your receipt number to one of the receipts we posted.</h2>
+                            
+                            <h2 style="color:blue">Well Done!</h2>
+                            <h4 style="color:blue">Please send us a picture of your receipt so we can verify that you are a </h4>
+                            
+                            
+                            <h4 style="color:red">  WINNER!!!</h4>
+                            </div>
+                </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Restaurant Receipt information:</h2> 
+                    
+                    <h2>Please fill out the following fields with what is printed on your receipt.</h2>
+                    <p style="color: red">Note that your receipt must match one of the receipts posted at</p>
+                    <a href=" https://saltydog.com/lucky/restaurant.html">
+                        <p style="color:blue">https://saltydog.com/lucky</p>
+                    </a>
+                    <form role="form" method="post" id="reused_form" enctype=&quot;multipart/form-data&quot; >
+                        <div id="receipt">
+                        <div class="form-group">
+                            <label for="name"> Receipt Number:</label>
+                            <input type="text" class="form-control" id="recnumber" name="recnumber" required maxlength="50">
+                        </div>
+                       
+                        <div class="form-group">
+                            <label for="name"> Date:</label>
+                            <input type="text" class="form-control" id="date" name="date" required maxlength="50">
+                        </div>
+                       
+                        <div class="form-group">
+                            <label for="name">  Server or Salesperson:</label>
+                            <input type="text" class="form-control" id="person" name="person" required maxlength="50">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="location"> Location:</label>
+                            <select id="location" name="location">
+                                    <option disabled selected>Select the restaurant you visited</option>
+                                 
+                                    <option value="Salty Dog Cafe in South Beach">Salty Dog Cafe in South Beach</option>  
+                                    <option value="Salty Dog Cafe in Bluffton">Salty Dog Cafe in Bluffton</option>
+                                    <option value="The Wreck of the Salty Dog">The Wreck of the Salty Dog</option>
+                                    <option value="Land's End Tavern">Land's End Tavern</option>
+                                    <option value="Salty Dog Cafe Seabrook">Salty Dog Seabrook</option>
+                                  
+                                </select>
+                          
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Amount:</label>
+                            <input type="text" class="form-control" id="amount" name="amount" required maxlength="50">
+                        </div>
+
+                    </div>
+                    <h2>Your information:</h2> 
+                        <div class="form-group">
+                            <label for="name"> Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"> Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                        </div>
+
+                    <div class="form-group">
+
+                        <label for="email2"> Please Confirm Your Email Address:</label>
+
+                        <input type="email2" class="form-control" id="email2" name="email2" required maxlength="50">
+
+                    </div>
+                        <div class="form-group">
+                            <label for="name"> Message:</label>
+                            <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Upload a photo of your receipt:</label>
+                            <input type="file" class="form-control" id="image" name="image" required>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs">Post It! &rarr;</button>
+                        <!-- <div class="g-recaptcha" data-sitekey="6Lckc5YUAAAAAAMHgfCXuvlbeO1FTsCAu4ihH8kx"></div> -->
+                   
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Your receipt was sent successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

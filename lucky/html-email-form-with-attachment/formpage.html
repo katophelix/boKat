@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <title>Lucky Receipt Submission</title>
+
+    <!-- Modernizr -->
+
+
+
+    <!-- jQuery-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- framework css -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<![endif]-->
+
+    <link rel="icon" type="image/png" href="../../images/social-logos/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet">
+
+    <!-- <link type="text/css" rel="stylesheet" href="../../css/dropMenustyle.css">
+
+    <link type="text/css" rel="stylesheet" href="../../css/form.css">
+
+    <link type="text/css" rel="stylesheet" href="../css/styleBoot.css"> -->
+
+   
+
+    <link rel="stylesheet" href="form.css">
+
+    <script src="form.js"></script>
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+    <div class="container">
+
+        <br>
+
+        <div id="back-button">
+
+            <a class="btn btn-secondary " href="../win.html" role="button" style="border:none" aria-haspopup="true" aria-expanded="false">
+
+                <img src="../../images/dog-paw.png"> Back to Lucky Receipts
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="container">
+
+        <div class="form-container justify-content-center" style="margin-left:7%;">
+
+            <div class="row justify-content-center" style="border:3px solid rgb(4, 4, 51); width:90%; padding-bottom: 5px; margin-left: 5%; text-align: left !important; font-size: 1em">
+
+                <div class="col-10">
+
+                    <h4 style="text-align: center; margin-left: 7%; margin-right: 7%; margin-top: 1%; color:rgb(4, 4, 51) !important ;">
+
+                        <strong>LUCKY RECEIPT CONTEST</strong>
+
+                        <br>
+
+                    </h4>
+
+                    <!-- <h4 style="text-align: center; margin-left: 7%; margin-right: 7%; margin-top: 1%; color:rgb(4, 4, 51) !important ;">
+
+                                        <strong>Your receipt number along with the date, location and amount printed on your receipt must match one of the receipts listed on the website to be a winning receipt.</strong>
+
+                                        <br>
+
+                                     </h4> -->
+
+
+
+
+
+
+
+                    <style>
+                        fieldset {
+                            display: block;
+                            margin-inline-start: 2px;
+                            margin-inline-end: 2px;
+                            padding-block-start: 0.35em;
+                            padding-inline-start: 0.75em;
+                            padding-inline-end: 0.75em;
+                            padding-block-end: 0.625em;
+                            min-inline-size: min-content; 
+                            border-width: 2px;
+                            border-style: groove;
+                            border-color: red;
+                            border-image: initial;
+                        }
+                    </style>
+
+                    <form role="form" method="post" style="text-align:left !important;  " id="reused_form" enctype=&quot;multipart/form-data&quot;>
+
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>Receipt information:</legend>
+                                <h6>Please fill out the following fields with what is printed on your receipt.</h6>
+
+                                <h6 style="color: red">Note that your receipt must match one of the receipts posted at</h6>
+                                <a href=" https://saltydog.com/lucky/win.html "><h5 style="color:blue">https://saltydog.com/lucky/win.html</h5></a>
+                                Receipt Number:<br>
+                                <input type="text" class="form-control" name="recnumber" id="recnumber">
+                                <br> Date:
+                                <br>
+                                <input type="text" class="form-control" name="date" id="date"> 
+                                Server or Salesperson:<br>
+                                <input type="text" class="form-control" name="person" id="person">
+                                <br> Location:
+                                <br>
+                                <input type="text" class="form-control" name="location" id="location"> Amount:
+                                <br>
+                                <input type="text" class="form-control" name="amount" id="amount">
+                                <br>
+
+
+
+                            </fieldset>
+
+
+
+
+                            <div class="form-group">
+
+                                <label for="name">Your Name:</label>
+
+                                <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="email">Your Email:</label>
+
+                                <input type="email" id="email" class="form-control" name="email" required maxlength="50">
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="form-group">
+
+                                <label for="email2"> Please Confirm Your Email Address:</label>
+
+                                <input type="email2" class="form-control" id="email2" name="email2" required maxlength="50">
+
+                            </div>
+                            <div class="form-group">
+
+                                <label for="name"> Message:(Not Required)</label>
+
+                                <textarea class="form-control" type="textarea" name="message" id="message" placeholder="" maxlength="6000" rows="2"></textarea>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="name">Upload Copy of Receipt:</label>
+
+                                <input type="file" class="form-control" id="image" name="image" required>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-secondary pull-right" id="btnContactUs">Send It! </button>
+
+                        </form>
+                        <div id="success_message" style="width:100%; height:100%; display:none; "> <h3 style="color:white !important">Sent your message successfully!</h3> </div>
+                        <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+</body>
+
+</html>

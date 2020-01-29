@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SaltyDogFeedback </title> <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+      </script>
+
+      <!-- framework css -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+      <!--<![endif]-->
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Quicksand" rel="stylesheet" />
+      <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/styleBoot.css" />
+      <link type="text/css" rel="stylesheet" href="https://saltydog.com/headers/mega-header.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <link rel="stylesheet" href="../css/form.css" />
+      <script src="form.js"></script>
+    
+</head>
+
+<body>
+
+  <script>
+    $(document).ready(function () {
+      $("div[data-includeHTML]").each(function () {
+        $(this).load($(this).attr("data-includeHTML"));
+      });
+    });
+  </script>
+
+
+
+  <header>
+    <div data-includeHTML="https://bohicket.saltydog.com/headers/headerbo.html"></div>
+  </header>
+ 
+ 
+  <br />
+  <br />
+  <!--     
+        <img src="https://saltydog.com/images/NEW HEADERS/FEEDUSBACK.jpg" style="width:100%; height:auto" alt="Banner of Overhead drone shot of salty dog cafe in south beach, with salty dog logo and events written on it.">
+        <br>
+        <br> -->
+  <div class="container">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <div class="form-container">
+
+      <form method="post" id="reused_form" class="form-style-10">
+        <div id="title">
+        <h5>
+          Restaurant Feedback </h5>
+          <p>
+          The questions on this survey are optional, but be sure to provide
+          contact information in an event that requires a personal response from
+          our management team.
+        </p>
+      </div>
+        <label for="name">Your Name:</label>
+        <input id="name" type="text" name="Name" maxlength="50" />
+        <label for="email">Email Address:</label>
+        <input id="email" type="email" name="Email" maxlength="50" />
+        <label for="phone">Phone:</label>
+        <input id="phone" type="phone" name="phone" maxlength="50" />
+        <label for="Date">Date of your visit:</label>
+        <input id="Date" type="Date" name="Date" maxlength="50" />
+        <label for="time">Approximate time of your visit:</label>
+        <input id="time" type="time" name="time" maxlength="50" />
+        <label for="restaurant">Which restaurant did you visit?</label>
+        <select name="restaurant" style="display: block; 
+                         width: 100%; border-radius: 10px;
+                        height: calc(2.25rem + 1px);">
+          <option value=""></option>
+          <option value="Cafe">Salty Dog Cafe</option>
+          <option value="Bluffton">Salty Dog Cafe Bluffton</option>
+          <option value="Wreck">The Wreck of the Salty Dog</option>
+          <option value="LET">Land's End Tavern</option>
+          <option value="Kiwi">Kiwi's Island Cookout</option>
+          <option value="Pizza">Jake's Pizza</option>
+          <option value="Ice Cream">Salty Dog Ice Cream</option>
+          <option value="Bodog">Salty Dog Cafe - Bohicket</option>
+        </select>
+        <label for="server">What was your server's name?</label>
+        <input id="server" type="server" name="server" maxlength="50" />
+        <label for="wait">How many minutes did you wait before being served?</label>
+        <input id="wait" type="wait" name="Wait-Time" maxlength="50" />
+        <label for="manager">Were you visited by a manager during your visit?</label>
+        <textarea id="manager" name="manager" rows="10" maxlength="6000"></textarea>
+        <div class="row">
+        <p>
+          Please let us know if you agree or disagree with the following
+          statments.
+        </p>
+        </div>
+        <label for="hostess">The Hostess was helpful and polite. </label>
+        <select name="Hostess was helpful" style="display: block; margin-bottom: 5px;
+                            width: 100%; border-radius: 10px;
+                           height: calc(2.25rem + 2px);" id="agree">
+          <option value="">Please choose response</option>
+          <option value="StronglyAgree">Strongly Agree</option>
+          <option value="Agree">Agree</option>
+          <option value="Disagree">Disagree</option>
+          <option value="StronglyDisagree">Stongly Disagree </option>
+        </select>
+
+        <label for="recommend">You would recommend our restaurant. </label>
+        <select name="I would reccomend restaurant" style="display: block;  margin-bottom: 5px;
+                               width: 100%; border-radius: 10px;
+                              height: calc(2.25rem + 2px);" id="agree">
+          <option value="">Please choose response</option>
+          <option value="StronglyAgree">Strongly Agree</option>
+          <option value="Agree">Agree</option>
+          <option value="Disagree">Disagree</option>
+          <option value="StronglyDisagree">Stongly Disagree </option>
+        </select>
+
+        <label for="prompt">Your food was served promptly.</label>
+        <select name="Food was served promptly" style="display: block; margin-bottom: 5px;
+                                  width: 100%; border-radius: 10px;
+                                 height: calc(2.25rem + 2px);" id="agree">
+          <option value="">Please choose response</option>
+          <option value="StronglyAgree">Strongly Agree</option>
+          <option value="Agree">Agree</option>
+          <option value="Disagree">Disagree</option>
+          <option value="StronglyDisagree">Stongly Disagree </option>
+        </select>
+
+        <label for="message">Your food was served hot and fresh.</label>
+        <select name="Food was served hot and fresh" style="display: block; margin-bottom: 5px;
+                            width: 100%; border-radius: 10px;
+                           height: calc(2.25rem + 2px);" id="agree">
+          <option value="">Please choose response</option>
+          <option value="StronglyAgree">Strongly Agree</option>
+          <option value="Agree">Agree</option>
+          <option value="Disagree">Disagree</option>
+          <option value="StronglyDisagree">Stongly Disagree </option>
+        </select>
+
+        <label for="message">Your experience was enjoyable.</label>
+        <select name="Experience was enjoyable" style="display: block; margin-bottom: 5px;
+                            width: 100%; border-radius: 10px;
+                           height: calc(2.25rem + 2px);" id="agree">
+          <option value="">Please choose response</option>
+          <option value="StronglyAgree">Strongly Agree</option>
+          <option value="Agree">Agree</option>
+          <option value="Disagree">Disagree</option>
+          <option value="StronglyDisagree">Stongly Disagree </option>
+        </select>
+
+        <label for="message">Start to finish the service was excellent.</label>
+        <select name="Service Was excellent" style="display: block; margin-bottom: 5px;
+                               width: 100%; border-radius: 10px;
+                              height: calc(2.25rem + 2px);" id="agree">
+          <option value="">Please choose response</option>
+          <option value="StronglyAgree">Strongly Agree</option>
+          <option value="Agree">Agree</option>
+          <option value="Disagree">Disagree</option>
+          <option value="StronglyDisagree">Stongly Disagree </option>
+        </select>
+        <label for="message">Any other comments or suggestions?</label>
+        <textarea id="message" name="Comments or sugestions?" rows="10" maxlength="6000"></textarea>
+
+        <button class="button-primary" type="submit">Post</button>
+      </form>
+      <div id="success_message" style="display:none">
+    <br>
+                <br>
+                <h1>Submitted successfully!</h1>
+                <h1> Thank you for your feedback. </h1>
+      </div>
+      <div id="error_message" style="width:100%; height:100%; display:none; ">
+        <h3>Error</h3>
+        Sorry there was an error sending your form.
+      </div>
+    </div>
+  </div>
+    <footer>
+        <div data-includeHTML="https://saltydog.com/headers/footer.html"></div>
+    </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

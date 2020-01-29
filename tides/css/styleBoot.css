@@ -1,0 +1,118 @@
+html { font-size: calc(1em + 1vw) }
+     
+        h1 {
+           
+            font-size: 4.0vw;
+        }
+        
+        h2 {
+          
+            font-size: 3.0vw;
+        }
+        h3 {
+           
+            font-size: 2.5vw;
+        }
+        
+        h4 {
+           
+            font-size: 1.9vw;
+        }
+        
+        h5 {
+         
+            font-size: 1.3vw;
+           
+        }
+        .carousel-inner img {
+            margin: auto;
+          }
+        
+        
+        h6 {
+           
+         
+            font-size: 1.1vw;
+        
+        }
+        
+        
+        p {
+         
+            font-size: .9vw;
+        }
+       
+
+        label{
+
+            font-size: 30px !important;
+            
+        }
+        .form-group{
+            padding-bottom: 30px;
+        }
+
+
+     form{
+        border:   1px solid yellow"
+     }
+
+    
+        .col {
+            text-align: center;
+          
+            padding-top: 5px;
+
+        }
+
+        .container {
+            text-align: center;
+            /* margin-top: 5px; */
+            max-width: 1200px;
+        }
+
+        .row {
+            text-align: center;
+           
+
+        }
+
+    
+
+        p {
+            text-align: left;
+            color: white!important;
+        }
+
+     .card-body{
+        background: rgb(4, 4, 51);
+
+     }
+
+        h3 {
+            color: white !important;
+            text-align: left;
+        }
+
+        h4 {
+            color: white !important;
+        }
+
+        h5 {
+            color: white !important;
+        }
+
+     h2 {
+         text-align: center;
+     }
+
+        h6 {
+           
+            color: white !important;
+           
+        }
+        label{
+            text-align: left!important;
+        }
+
+     

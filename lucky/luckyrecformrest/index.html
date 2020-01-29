@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <title>Lucky Receipt Form</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+            <style>
+                    #receipt {
+                        display: block;
+                        margin-inline-start: 2px;
+                        margin-inline-end: 2px;
+                        padding-block-start: 0.35em;
+                        padding-inline-start: 0.75em;
+                        padding-inline-end: 0.75em;
+                        padding-block-end: 0.625em;
+                        min-inline-size: min-content;
+                        border-width: 2px;
+                        border-style: groove;
+                        border-color: red;
+                        border-image: initial;
+                    }
+                </style>
+
+
+<form action="checkrec.php" method="POST" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="questionID" value="1" />
+
+<label>Enter amount:</label>
+
+
+<label>Amount!</label>
+<input type="text" name="amount" />
+<label>salesperson!</label>
+<input type="text" name="salesperson" /> 
+
+
+<button type="submit">
+Check It
+</button>
+</form>
+
+    </body>
+</html>

@@ -1,0 +1,92 @@
+html { font-size: calc(1em + 1vw) }
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+     
+        h1 {
+           
+            font-size:1.2em;
+        }
+        
+      
+        
+     
+        
+        
+        h3 {
+           
+            font-size: 1.2em;
+        }
+        
+     h4{
+        font-size: .8em;
+     }
+        
+        
+        .carousel-inner img {
+            margin: auto;
+          }
+        
+       
+      
+          
+
+        .form-group   label textarea{
+
+            font-size: .9em !important;
+            
+        }
+        .form-group   label{
+
+            font-size: .9em !important;
+            
+        }
+
+        label{
+
+            font-size: .9em !important;
+            text-align: left !important;
+            
+        }
+        .form-group{
+            font-size: .9em !important;
+       
+        }
+
+
+     form{
+        font-size: .9em !important;
+        border:   1px solid yellow"
+     }
+
+    
+        .col {
+            text-align: left;
+          
+            padding-top: 5px;
+
+        }
+
+        .container {
+            text-align: center;
+            /* margin-top: 5px; */
+            max-width: 1200px;
+        }
+
+        .row {
+            text-align: center;
+           
+
+        }
+
+
+   
+
+  
+    
+        label{
+            text-align: left!important;
+        }
+
+     
